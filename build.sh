@@ -1,6 +1,11 @@
 #!/bin/bash
 set -euo pipefail
 
-(cd twitter-text-parse-go && cargo build --release)
+function build {
+  (cd twitter-text-parse-go && cargo build --release --target $1)
+  cp twitter-text-parse-go/target/release/libtwitter_text_parse_go.a lib/libtwitter_text_parse_go-$1.a
+}
+
 mkdir -p lib
-cp twitter-text-parse-go/target/release/libtwitter_text_parse_go.a lib
+build x86_64-unknown-linux-gnu
+build x86_64-unknown-linux-musl
