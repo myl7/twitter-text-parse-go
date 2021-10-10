@@ -22,4 +22,4 @@ jobs:
       - uses: actions/upload-artifact@v2
         with:
           name: libtwitter_text_parse_go-${{ matrix.target }}.a
-          path: twitter-text-parse-go/target/${{ matrix.target }}/release/libtwitter_text_parse_go.a
+          path: twitter-text-parse-go/target/release/libtwitter_text_parse_go.a
