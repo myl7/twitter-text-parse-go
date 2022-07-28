@@ -4,7 +4,7 @@
 
 `main` branch is for `go get`. Refer to `dev` branch for development.
 
-# Get Started
+## Get Started
 
 For target `x86_64-unknown-linux-gnu`, use the package in dir `pkg/gnu`:
 
