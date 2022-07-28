@@ -1,8 +1,9 @@
 package main
 
 import (
-	twtextparse "github.com/myl7/twitter-text-parse-go"
 	"log"
+
+	twtextparse "github.com/myl7/twitter-text-parse-go/pkg/gnu"
 )
 
 func main() {

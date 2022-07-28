@@ -14,7 +14,9 @@ jobs:
           default: true
       - name: Build
         run: bash build/build.sh
+      - name: Test gnu
+        run: go run test/gnu_main/main.go
       - uses: actions/upload-artifact@v2
         with:
-          name: libtwitter_text_parse_go
+          name: lib
           path: lib
